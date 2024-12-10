@@ -1,2 +1,5 @@
 tests/__pycache__/
 utils/__pycache__/
+scraped_data.xlsx
+test_results.csv
+test_results.xlsx
