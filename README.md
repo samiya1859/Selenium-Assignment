@@ -26,3 +26,16 @@ This project is a Selenium-based web automation testing framework designed for t
    ```bash
    git clone https://github.com/samiya1859/Selenium-Assignment.git
    cd Selenium-Assignment
+   ```
+2. Create and activate a virtual environment
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate # On Windows use .venv\Scripts\activate
+   ```
+3. Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+
