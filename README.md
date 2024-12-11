@@ -53,9 +53,10 @@ python main.py
    - test_results.xlsx: Excel format with test results, organized into multiple sheets for 
     each test case.
 ## Test Cases
+
 The project performs the following tests:
 
-1. H1 Tag Existence Test: Checks whether the page contains an <h1> tag.
+1. H1 Tag Existence Test: Checks whether the page contains an h1 tag.
 2. HTML Tag Sequence Test: Verifies the sequence of HTML tags (h1 to h6).
 3. Image Alt Attribute Test: Ensures all images have valid alt attributes.
 4. URL Status Code Test: Checks if all links return valid HTTP status codes (200 OK, etc.).
