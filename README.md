@@ -4,11 +4,27 @@ This project is a Selenium-based web automation testing framework designed for t
 
 ## Features
 
-- **SEO Testing**: Check for SEO-related elements like H1 tags, meta descriptions, open graph tags, and canonical tags.
-- **URL Validation**: Ensure all URLs on the page are valid and return the correct status code.
-- **Accessibility Checks**: Ensure that images have alt attributes.
-- **Currency Filter Test**: Validate if the currency filter functionality works as expected.
-- **Reporting**: Save test results in both CSV and Excel formats with multiple sheets for different test cases.
+### SEO Testing:
+
+Checks for the existence of meta tags, including description and title.
+
+Validates Open Graph (og) tags for social media compatibility.
+
+### Accessibility Testing:
+
+Verifies the presence of the H1 tag and its sequence with other heading tags (H2 to H6).
+
+Checks if all images have alt attributes.
+
+### Functional Testing:
+
+Navigates through all internal links to ensure they are valid and not broken (404 errors).
+
+Tests the currency filter dropdown functionality.
+
+### Data Scraping:
+
+Extracts structured data from window.ScriptData for additional validation and reporting.
 
 ## Requirements
 
@@ -44,7 +60,6 @@ pip install -r requirements.txt
    Example:
 
 ```markdown
-Copy code
 ### Prerequisites
 - Python 3.12.3 or later
 - Google Chrome and matching [ChromeDriver](https://chromedriver.chromium.org/downloads)
@@ -55,12 +70,22 @@ Copy code
 ```bash
 python main.py
 ```
-3. The test results will be saved in the following files:
+4. The test results will be saved in the following files:
 
    - test_results.csv: CSV format with test results.
    - test_results.xlsx: Excel format with test results, organized into multiple sheets for 
     each test case.
-4. 
+## Outputs
+ ### Test Results:
+
+test_results.csv: A CSV file containing the test results.
+
+test_results.xlsx: An Excel file with separate sheets for each test case.
+
+### Scraped Data:
+
+scraped_data.xlsx: Contains structured data extracted from window.ScriptData.
+
 ## Test Cases
 
 The project performs the following tests:
@@ -85,6 +110,12 @@ The project performs the following tests:
 4. Push to your forked branch (git push origin feature-branch).
 5. Create a pull request.
 
+## Known Issues / Future Improvements
+
+1. Extend the window.ScriptData scraping logic to handle more complex or deeply nested data structures.
+2. Improve logging for better traceability during test execution.
+3. Add more test cases for advanced SEO and accessibility validation.
+
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
@@ -102,3 +133,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 You can adjust this template to fit the specific needs and structure of your project!
 ```
+
