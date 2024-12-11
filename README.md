@@ -41,8 +41,16 @@ pip install -r requirements.txt
    
 ## Usage
 1. Make sure all dependencies are installed and ChromeDriver is set up correctly.
+   Example:
 
-2. Run the main.py file to execute all tests:
+```markdown
+Copy code
+### Prerequisites
+- Python 3.12.3 or later
+- Google Chrome and matching [ChromeDriver](https://chromedriver.chromium.org/downloads)
+- Selenium, Pandas, Requests (install via `pip install -r requirements.txt`)
+```
+3. Run the main.py file to execute all tests:
 
 ```bash
 python main.py
@@ -52,6 +60,7 @@ python main.py
    - test_results.csv: CSV format with test results.
    - test_results.xlsx: Excel format with test results, organized into multiple sheets for 
     each test case.
+4. 
 ## Test Cases
 
 The project performs the following tests:
